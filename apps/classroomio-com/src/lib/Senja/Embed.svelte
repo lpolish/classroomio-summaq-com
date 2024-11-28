@@ -9,4 +9,10 @@
   });
 </script>
 
+<style>
+ .dark .senja-embed {
+    background-color: #1a202c !important;
+  }
+</style>
+
 <div class="senja-embed" data-id={id} data-lazyload="false" data-spinner="false"></div>

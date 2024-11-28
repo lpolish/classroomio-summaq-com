@@ -105,6 +105,10 @@ li {
   background-image: url('https://assets.cdn.clsrio.com/www/tools-hero-bg.svg');
 }
 
+.dark .tools-hero-bg {
+  background-image: url('/tools-hero-bg-dark.svg');
+}
+
 @media (min-width: 760px) {
   .tools-hero-bg {
     min-height: 350px;
@@ -126,4 +130,21 @@ li {
   .embed {
     width: 560px;
   }
+}
+
+.dark .sj-card {
+  background: #1a202c !important;
+}
+.dark .sj-card mark {
+  background: #333 !important;
+  color: white !important;
+}
+.dark .sj-text-card > .sj-card-content > *,
+.dark .sj-endorser-name,
+.dark .sj-desc {
+  color: #ddd !important;
+}
+
+.dark .bg-secondary {
+  background: #1a202c;
 }
