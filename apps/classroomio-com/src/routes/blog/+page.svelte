@@ -14,22 +14,22 @@
 <section>
   <PageHeader className="flex flex-col items-center justify-center text-center">
     <h1
-      class="mx-auto text-4xl md:text-7xl lg:text-6xl font-bold text-slate-900 flex flex-col items-center"
+      class="mx-auto text-4xl md:text-7xl lg:text-6xl font-bold text-slate-900 flex flex-col items-center dark:text-slate-300"
     >
       <span>What's new on</span>
-      <span class="text-blue-700 relative">ClassroomIO?</span>
+      <span class="text-blue-700 dark:text-blue-500 relative">ClassroomIO?</span>
     </h1>
-    <p class="w-[90%] md:w-[60%] text-center font-normal text-lg text-slate-700 mt-10 lg:mt-7">
+    <p class="w-[90%] md:w-[60%] text-center font-normal text-lg text-slate-700 dark:text-slate-300 mt-10 lg:mt-7">
       Get the latest news from ClassroomIO, including product updates, team announcements and more!
     </p>
   </PageHeader>
   <div class="w-full flex items-center justify-center">
     <ul class="flex flex-col items-start justify-start gap-2 w-[90%] md:w-[50%]">
       {#each data.posts as post}
-        <li class="py-10 w-full border-b border-gray-200">
+        <li class="py-10 w-full border-b border-gray-200 dark:border-slate-700">
           <div class="mb-5 flex md:flex-row flex-col md:items-center gap-2">
             <!-- Date -->
-            <p class="text-sm text-slate-500">{formatDate(post.date)}</p>
+            <p class="text-sm text-slate-500 dark:text-slate-300">{formatDate(post.date)}</p>
 
             <!-- Tags  -->
             <div class="flex flex-col">
@@ -52,14 +52,14 @@
               {@html post.title}
             </p>
 
-            <p class="text-slate-500 pt-2 pb-4">{post.description}</p>
+            <p class="text-slate-500 dark:text-slate-300 pt-2 pb-4">{post.description}</p>
           </a>
 
           <div class="flex items-center justify-start gap-4 my-2">
             <img loading="lazy" src={post.avatar} alt="avatar" class="w-10 h-10 rounded-full" />
             <span>
-              <p class="font-semibold">{post.author}</p>
-              <p class="text-slate-500">{post.role}</p>
+              <p class="font-semibold dark:text-slate-300">{post.author}</p>
+              <p class="text-slate-500 dark:text-slate-400">{post.role}</p>
             </span>
           </div>
         </li>
